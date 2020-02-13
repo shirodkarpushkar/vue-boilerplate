@@ -1,29 +1,27 @@
-# vue-boilerplate
+# VueJs BoilerPlate
 
-## Project setup
-```
-yarn install
-```
+The following repository shall used as a boilerplate for VueJS applications.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+  - Compile and run
+  - no eslint and console errors
 
-### Compiles and minifies for production
-```
-yarn run build
+### Installation
+
+- To install the required dependencies
+```sh
+$ yarn install
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
+- To run application in development mode
+```sh
+$ yarn dev
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- To make production build 
+```sh
+$ yarn build
+```
+### Development
+
+Want to contribute? Great! Drop an email at pushkars@winjit.com
+
