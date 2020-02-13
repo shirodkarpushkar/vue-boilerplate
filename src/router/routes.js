@@ -8,22 +8,7 @@ export default [
     name: "auth"
     // component: () => lazyLoadView(import("path of file"))
   },
-  {
-    path: "/404",
-    name: "404",
-    component: require("@views/_404").default,
-    // Allows props to be passed to the 404 page through route
-    // params, such as `resource` to define what wasn't found.
-    props: true
-  },
-  /*Redirect any unmatched routes to the 404 page. This may
-    require some server configuration to work in production:
-    https://router.vuejs.org/en/essentials/history-mode.html#example-server-configurations
-   */
-  {
-    path: "*",
-    redirect: "404"
-  }
+ 
 ];
 /*
  Lazy-loads view components, but with better UX.A loading view
@@ -44,13 +29,13 @@ function lazyLoadView(AsyncView) {
   const AsyncHandler = () => ({
     component: AsyncView,
     // A component to use while the component is loading.
-    loading: require("@views/_loading").default,
+    /* loading: require("@views/_loading").default, */
     // Delay before showing the loading component.
     // Default: 200 (milliseconds).
     delay: 400,
     // A fallback component in case the timeout is exceeded
     // when loading the component.
-    error: require("@views/_timeout").default,
+    /* error: require("@views/_timeout").default, */
     // Time before giving up trying to load the component.
     // Default: Infinity (milliseconds).
     timeout: 10000
