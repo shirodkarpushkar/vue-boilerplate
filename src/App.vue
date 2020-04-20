@@ -1,28 +1,38 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import appConfig from '@src/app.config'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  page: {
+    // All subcomponent titles will be injected into this template.
+    titleTemplate(title) {
+      title = typeof title === 'function' ? title(this.$store) : title
+      return title ? `${title} | ${appConfig.title}` : appConfig.title
+    },
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<template>
+  <div id="app">
+    <!--
+    Even when routes use the same component, treat them
+    as distinct and create the component again.
+    -->
+    <RouterView :key="$route.fullPath" />
+  </div>
+</template>
+
+<!-- This should generally be the only global CSS in the app. -->
+<style lang="scss">
+
+@import '~nprogress/nprogress.css';
+@import '@design';
+
+body {
+  background: #efefef;
+}
+
+#nprogress .bar {
+  background: $color-link-text;
 }
 </style>
