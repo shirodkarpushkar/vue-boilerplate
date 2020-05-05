@@ -1,4 +1,4 @@
-# AFOOFA
+# BoilerPlate for Making Vue Applications
 
 ## Getting started
 
