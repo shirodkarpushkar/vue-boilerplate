@@ -3,25 +3,14 @@ import store from '@state/store'
 export default [
   {
     path: '/',
-    redirect: 'dashboard',
+    redirect: 'home',
   },
 
   {
-    path: '/dashboard',
-    name: 'landingPage',
-    component: () => lazyLoadView(import('@views/user/dashboard')),
-    meta: {
-      beforeResolve(routeTo, routeFrom, next) {
-        // If the user is already logged in
-        if (store.getters['auth/loggedIn']) {
-          // Redirect to the home page instead
-          next({ name: 'home' })
-        } else {
-          // Continue to the login page
-          next()
-        }
-      },
-    },
+    path: '/home',
+    name: 'home',
+    component: () => lazyLoadView(import('@views/home')),
+
   },
   /* name has different to reuse the same component */
 

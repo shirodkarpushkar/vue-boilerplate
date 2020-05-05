@@ -1,22 +1,19 @@
 <template>
-  <Layout>
-    <div> <h3 style="text-align: center; margin-top:50px">Home Page</h3> </div>
-  </Layout>
+  <div>
+    <h3>Home</h3>
+  </div>
 </template>
 
 <script>
-import Layout from '@layouts/main'
-
+import AgoraRTC from 'agora-rtc-sdk'
 export default {
   page: {
     title: 'Home',
     meta: [{ name: 'description', content: 'Home' }],
   },
-  components: { Layout },
+  components: {},
   data() {
-    return {
-      entity: '',
-    }
+    return {}
   },
 }
 </script>
