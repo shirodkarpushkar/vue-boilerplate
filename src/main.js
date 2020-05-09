@@ -13,8 +13,6 @@ Vue.use(VueLazyLoad)
 Vue.use(Vuelidate)
 Vue.use(Toasted)
 Vue.use(VueAwesomeSwiper)
-Vue.prototype.$flag = 0
-    // Standard Vuetify theme
 
 // Don't warn about using the dev version of Vue in development.
 Vue.config.productionTip = process.env.NODE_ENV === 'production'
