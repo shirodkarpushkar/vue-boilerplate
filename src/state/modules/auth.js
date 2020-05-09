@@ -65,79 +65,7 @@ export const actions = {
     }
   },
 
-  // getting the authtoken info from sgtwo.io server and given the code received from the authenication
-  getAuthToken({ commit, dispatch, getters }, { code } = {}) {
-    // console.log('code', code)
-    var param = qs.stringify({
-      grant_type: 'authorization_code',
-      code: code,
-      redirect_uri: serverUrl,
-      client_id: config.client_id,
-      client_secret: config.client_secret,
-    })
-    return axios({
-      method: 'post',
-      url:
-        'https://auth.sgtwo.io/auth/realms/sgtwo-internal/protocol/openid-connect/token',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      data: param,
-    })
-      .then((response) => {
-        console.log('TCL: getAuthToken -> response', response.data)
-        commit('SET_CURRENT_USER_AUTHTOKEN', response.data)
-        return response.data
-      })
-      .catch((error) => {
-        console.log('TCL: getAuthToken -> error', error)
-        throw error
-      })
-  },
 
-  // Validates the current user's token and refreshes it
-  // with new data from the API.
-  refreshToken({ commit, dispatch, state }) {
-    if (!state.authToken || !getSavedState('authToken')) {
-      dispatch('logOut')
-      window.sessionStorage.clear()
-      return Promise.resolve(null)
-    }
-
-    // console.log('state.authToken.refresh_token', state.authToken.refresh_token)
-    var param = qs.stringify({
-      grant_type: 'refresh_token',
-      refresh_token: state.authToken.refresh_token,
-      client_id: config.client_id,
-      client_secret: config.client_secret,
-    })
-
-    delete axios.defaults.headers.common['X-AUTH-TOKEN']
-
-    return axios({
-      method: 'post',
-      url:
-        'https://auth.sgtwo.io/auth/realms/sgtwo-internal/protocol/openid-connect/token',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      data: param,
-    })
-      .then((response) => {
-        console.log('TCL: refreshToken -> response', response.data)
-        commit('SET_CURRENT_USER_AUTHTOKEN', response.data)
-        return response.data
-      })
-      .catch((error) => {
-        // commit('SET_CURRENT_USER_AUTHTOKEN', null)
-        if (error.response && error.response.status === 401) {
-          commit('SET_CURRENT_USER_AUTHTOKEN', null)
-        }
-        return null
-        // throw error
-      })
-    //   return true
-  },
 
   // Logs out the current user.
   logOut({ commit }) {
