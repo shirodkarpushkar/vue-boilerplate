@@ -6,12 +6,6 @@ export const authComputed = {
   }),
   ...mapGetters('auth', ['loggedIn']),
 }
-// export const productComputed = {
-//     ...mapState('products', {
-//         singleProductData: (state) => state.singleProductData,
-//     }),
-//     ...mapGetters('products', ['get_single_product']),
-// }
 
 export const userMethods = mapActions('masters', [
   'signUpUser',
