@@ -28,6 +28,7 @@ export default {
 @import '@design';
 
 body {
+  font-family: 'Jost', sans-serif;
 }
 
 #nprogress .bar {
