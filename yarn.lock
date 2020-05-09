@@ -2340,11 +2340,6 @@ agentkeepalive@^2.2.0:
   resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-2.2.0.tgz#c5d1bd4b129008f1163f236f86e5faea2026e2ef"
   integrity sha1-xdG9SxKQCPEWPyNvhuX66iAm4u8=
 
-agora-rtc-sdk@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/agora-rtc-sdk/-/agora-rtc-sdk-3.1.0.tgz#1a5abbe8e73fe7baa0b25b07521c3ea80ef7e751"
-  integrity sha512-eUKo+o/mEHRMnXVaJNSX4FH9hKxy24XPiY6UCNir/f5oul9dOsaLvTaExuEJo1Kc5+5NrmPKUgITYoY7NJEUvQ==
-
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"

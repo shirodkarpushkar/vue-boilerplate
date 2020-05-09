@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AgoraRTC from 'agora-rtc-sdk'
+
 export default {
   page: {
     title: 'Home',
