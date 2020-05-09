@@ -1,0 +1,60 @@
+/*
+ * Shortcode: map.less
+ * -----------------------------------------------
+*/
+.toggle-map {
+    background: fade(@black, 70%);
+    color: @white-base;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: @zindex-toggle-map;
+    .transition(all 200ms linear);
+    &:hover {
+        color: @white-base;
+    }
+    span {
+        &:after {
+            content: "\f107";
+            font-family: fontawesome;
+            margin-left: 10px;
+        }
+    }
+    &.open {
+        span {
+            &:after {
+                content: "\f106";
+            }
+        }
+    }
+ }
+
+.map-canvas {
+    height: 400px;
+    .transition(all .3s linear 0s);
+    &.big {
+        height: 720px;        
+    }
+    &.map-hidden {
+        height: 0;       
+    }
+}
+
+.btn-show-map {
+    color: @black-111;
+    font-size: 18px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 45%;
+    i {
+    font-size: 48px;        
+    }
+}

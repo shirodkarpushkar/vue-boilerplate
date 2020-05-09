@@ -1,0 +1,340 @@
+/*
+ * Shop.less
+ * -----------------------------------------------
+*/
+
+/* -------- Product Details Page ---------- */
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.products .product {
+  border: 1px solid @gray-lighter;
+  max-width: 400px;
+  &:hover {
+    border: 1px solid @gray-lighter;
+  }
+  .product-details .product-title {
+    font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+}
+.btn-add-to-cart-wrapper,.btn-product-view-details {  
+  opacity: 0;
+  height: auto;
+  margin: 0 0 15px;
+  .transition(400ms);
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+}
+.product:hover .btn-add-to-cart-wrapper,.product:hover .btn-product-view-details {
+  left: 0;
+  opacity: 1;
+}
+.btn-product-view-details {
+  left: auto;
+  bottom: 0;
+  right: -60px;
+}
+.product:hover .btn-product-view-details {
+  left: auto;
+  opacity: 1;
+  right: 0;
+}
+
+/* -------- Price ---------- */
+.product {
+  .price {
+    margin-top: 5px;
+    .amount {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    del {
+      .amount {
+        color: @black-999;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    ins {
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* -------- Product-Summary ---------- */
+
+.product {
+  .product-summary {
+    .product-title {
+      margin-top: 0;
+    }
+    .short-description {
+      margin-bottom: 15px;
+    }
+    .cart-form-wrapper .btn {
+      margin-top: 0;
+    }
+    .variations {
+      width: 100%;
+    }
+  }
+
+  .product-tab {
+    margin-top: 30px;
+  }
+  .commentlist {
+    .comment {
+      margin-top: 30px;
+      position: relative;
+      .meta {
+        font-size: 12px;
+      }
+      .author {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .product-thumb {
+    position: relative;
+    &:hover .overlay {
+      opacity: 1;
+    }
+    .overlay .add-to-wishlist {
+      color: #fff;
+      right: 10px;
+      top: 10px;
+      position: absolute;
+    } 
+  }
+}
+
+.product .product-summary .cart-form-wrapper .quantity, .tbl-shopping-cart .quantity {
+  display: inline-block;
+  margin-right: .8571em;
+  position: relative;
+  width: 4.1429em;
+  vertical-align: top;
+
+  .minus, 
+  .plus {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    height: 18px;
+    left: 2.8571em;
+    line-height: 1;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    width: 18px;
+  }
+  .minus {
+    bottom: 0;
+  }
+  .plus {
+    top: 0;
+  }
+  .qty {
+    -moz-appearance: textfield;
+    border: 1px solid #ccc;
+    height: 41px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 40px;
+  }
+}
+
+/* -------- Star-Rating ---------- */
+.star-rating {
+  font-size: 14px;
+  height: 16px;
+  width: 75px;
+  line-height: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  &::before, 
+  span::before {
+      color: @gray-darkgray;
+      content: "\f005\f005\f005\f005\f005";
+      float: left;
+      font-family: fontawesome;
+      left: 0;
+      letter-spacing: 2px;
+      position: absolute;
+      top: 0;
+  }
+  span {
+      float: left;
+      left: 0;
+      overflow: hidden;
+      padding-top: 1.5em;
+      position: absolute;
+      top: 0;
+  }
+}
+
+/* -------- Tag Sale ---------- */
+.product .tag-sale {
+    margin: 0;
+    top: 0;
+    display: block;
+    left: auto;
+    right: 0;
+  .transition(400ms);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 4px 10px 4px 16px;
+    position: absolute;
+    text-align: right;
+    text-transform: uppercase;
+    z-index: 9;
+
+  .tag-sale::before {
+    border-color: transparent transparent transparent @gray-gainsboro;
+    border-style: solid;
+    border-width: 12px 13px 13px 8px;
+    content: "";
+    height: 0;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 1px;
+    width: 0;
+  }
+}
+
+/* -------- Cart Page ---------- */
+.tbl-shopping-cart {
+  .product-thumbnail img {
+    max-width: 72px;
+    max-height: 72px;
+  }
+  .product-remove {
+    text-align: center;
+  }
+  .variation .variation-size, 
+  .variation .variation-size span {
+    font-size: 12px;
+  }
+  tr th, 
+  tr td, 
+  .coupon label, 
+  .coupon input, 
+  .coupon button {
+    vertical-align: middle;
+  }
+  tr td {
+    padding: 10px 12px;
+  }
+}
+
+
+table.no-border td {
+    border: medium none;
+}
+
+/* -------- Checkout Page ---------- */
+.payment-method {
+  .radio {
+    border: 1px solid #eee;
+    padding: 10px;
+    > label {
+      color: #111;
+      font-size: 17px;
+    }
+    input {
+      margin-top: 8px;
+      vertical-align: initial;
+    }
+    > p {
+      margin-left: 20px;
+    }
+  }
+}
+#checkout-shipping-address {
+  display: none;
+}
+
+
+/* -------- Top Nav Search And Cart ---------- */
+.top-nav-search-box, .top-nav-cart-box {
+  .indicator {
+    display: none;
+  }
+}
+.dropdown-cart {
+  padding: 10px;
+
+  .cart-table-list,
+  .cart-table-list i{
+      color: @black-222;
+      border: none;
+  }
+  .cart-table-list {
+
+    a {
+        line-height: normal;
+        color: @black-222;
+    }
+    td img {
+        width: 50px;
+        height: auto;
+    }
+    &.table>tbody>tr>td {
+        border: none;
+        line-height: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+  }
+
+  .total-cart {
+      display: inline-block;
+      width: 100%;
+      padding-top: 20px;
+      color: #222;
+      text-align: right;
+    ul {
+        float: right;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+      li{
+          display: block;
+          overflow: hidden;
+        span {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            white-space: nowrap;
+        }
+      }
+    }
+    .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+      border: 0;
+    }
+  }
+  .cart-btn .btn {
+    width: auto;
+    float: none;
+    padding: 5px 15px;
+  }
+}

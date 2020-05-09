@@ -1,0 +1,290 @@
+/*
+ * Shortcode: icon-box.less
+ * -----------------------------------------------
+*/
+.icon-box {
+    position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+	img {
+        height: 100%;
+        left: 0;
+        opacity: 0.05;
+        position: absolute;
+        top: 0;
+        transition: all 0.3s ease 0s;
+        width: 100%;
+    }
+    &:hover img {
+      opacity: 0;
+	}
+
+	.icon {
+		display: inline-block;
+		height: 64px;
+		margin-bottom: 20px;
+		text-align: center;
+		.transition(all .3s ease);
+		width: 64px;
+
+		i{
+			line-height: 64px;
+		}
+
+		// Icon gray
+		&.icon-gray {
+			background-color: @gray-lighter;
+			color: @black-555;
+
+			&:hover {
+				background-color: darken(@gray-lighter, 10%);
+				color: darken(@gray, 10%);
+			}
+
+			//icon bordered
+			&.icon-bordered {
+				background-color: transparent;
+				border: 2px solid @gray-lighter;
+
+				&:hover {
+					background-color: @gray-lighter;
+					color: @black-555;
+				}
+
+			}
+		}
+
+		// Icon dark
+		&.icon-dark {
+			background-color: @black-111;
+			color: @white-base;
+
+			&:hover {
+				color: darken(@gray-light, 10%);
+			}
+
+			//icon bordered
+			&.icon-bordered {
+				background-color: transparent;
+				border: 2px solid @black-111;
+				color: @black-111;
+				
+				&:hover {
+					background-color: @black-111;
+					border-color: @black-111;
+					color: @white-base;
+				}
+
+			}
+		}
+
+		// Icon dark
+		&.icon-white {
+			background-color: @white-base;
+			color: @black-333;
+
+			&:hover {
+				background-color: darken(@white-base, 30%);
+				color: darken(@black-333, 30%);
+			}
+
+			//icon bordered
+			&.icon-bordered {
+				background-color: transparent;
+				border: 2px solid @white-base;
+				color: @white-base;
+				
+				&:hover {
+					background-color: @white-base;
+					border-color: @white-base;
+					color: @black-111;
+				}
+
+			}
+
+			// Icon white border effect
+			&.icon-border-effect {
+				position: relative;
+
+				&::after {
+				  box-shadow: 0 0 0 3px @white-base;
+				}
+			}
+		}
+
+		// Icon bordered
+		&.icon-bordered {
+			border: 1px solid @gray-light;
+
+			&:hover {
+				background-color: @gray-light;
+				color: @white-base;
+			}
+		}
+
+		// Icon rounded
+		&.icon-rounded {
+			border-radius: 3px;		
+		}
+
+		// Icon rounded
+		&.icon-circled {
+			border-radius: 50%;
+		}
+
+		// Icon xs
+		&.icon-xs {
+			height: 30px;
+			width: 30px;
+
+			i {
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+
+		// Icon sm
+		&.icon-sm {
+			height: 50px;
+			width: 50px;
+
+			i {
+				font-size: 22px;
+				line-height: 50px;
+			}
+		}
+
+		// Icon md
+		&.icon-md {
+			height: 75px;
+			width: 75px;
+
+			i {
+				font-size: 36px;
+				line-height: 75px;
+			}
+		}
+
+		// Icon lg
+		&.icon-lg {
+			height: 90px;
+			width: 90px;
+
+			i {
+				font-size: 48px;
+				line-height: 90px;
+			}
+		}
+
+		// Icon xl
+		&.icon-xl {
+			height: 120px;
+			width: 120px;
+
+			i {
+				font-size: 60px;
+				line-height: 120px;
+			}
+		}
+
+		// Icon border effect
+		&.icon-border-effect {
+			position: relative;
+
+			&::after {
+			  border-radius: 50%;
+			  box-shadow: 0 0 0 3px @gray-lighter;
+			  box-sizing: content-box;
+			  content: "";
+			  height: 100%;
+			  left: -4px;
+			  opacity: 0;
+			  padding: 4px;
+			  top: -4px;
+			  transform: scale(0.8);
+			  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+			  pointer-events: none;
+			  position: absolute;
+			  width: 100%;
+			}
+
+			&.effect-flat {
+				&::after {
+					border-radius: 0;
+				}
+			}
+
+			&.effect-rounded {
+				&::after {
+					border-radius: 3px;
+				}
+			}
+
+			&.effect-circled {
+				&::after {
+					border-radius: 50%;
+				}
+			}
+			// Icon gray
+			&.icon-gray {
+				&::after {
+					box-shadow: 0 0 0 3px @gray-lighter;
+				}
+			}
+		}
+
+		// Icon border effect
+		&.icon-top {
+		  left: 0;
+		  margin: 0 auto;
+		  position: absolute;
+		  right: 0;
+		  top: -32px;
+		}
+
+
+	}
+
+	i {
+		display: inline-block;
+		font-size: 42px;
+		.transition(all .3s ease);
+	}
+
+	i[class*="pe-7s-"] {
+		vertical-align: text-bottom;
+	}
+
+	&.left {
+		text-align: left;
+	}
+
+	&.left a {
+		margin-right: 20px;
+		padding: 0;
+	}
+
+	// iconbox border
+	&.iconbox-border {
+		border: 1px solid @gray-gainsboro;
+	}
+
+	// iconbox bg
+	&.iconbox-bg {
+		background-color: @white-fa;
+
+		&.iconbox-bg-dark {
+			background-color: @black-333;
+		}
+	}
+
+	.icon-box-title {
+		margin-bottom: 15px;
+	}
+}
+
+.icon-box .icon-border-effect:hover::after,
+.icon-box:hover .icon-border-effect::after {
+  opacity: 1;
+  transform: scale(1);
+}

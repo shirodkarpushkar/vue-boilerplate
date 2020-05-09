@@ -1,0 +1,84 @@
+/*
+ * Shortcode: working-process.less
+ * -----------------------------------------------
+*/
+.working-process {
+	> li {
+		float: left;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+
+		&::after {
+			border-top: 1px dashed @black-333;
+			content: "";
+			left: 6px;
+			margin-left: -32px;
+			overflow: hidden;
+			position: absolute;
+			top: 25px;
+			width: 50%;
+		}
+		&::before {
+			border-top: 1px dashed @black-333;
+			content: "";
+			margin-right: -25px;
+			position: absolute;
+			right: 0;
+			top: 25px;
+			width: 50%;
+		}
+		:first-child::after {
+		  border-top: medium none;
+		}
+		:last-child::before {
+		  border-top: medium none;
+		}
+		
+	}
+	li a {
+		border: 1px solid;
+		display: inline-block;
+		height: 50px;
+		line-height: 50px;
+		overflow: hidden;
+		width: 50px;
+		border-radius: 50%;
+
+		&:hover {
+			background: @black-333 none repeat scroll 0 0;
+			border: 1px solid transparent;
+			color: @white-base;
+		}
+	}
+	li a i {
+		font-size: 18px;
+	}
+	&.square li a,
+	&.square.large-circle li a  {
+		border-radius: 0;
+	}
+	&.large-circle {
+		li a {
+			height: 120px;
+			line-height: 130px;
+			width: 120px;
+			border-radius: 50%;
+
+			i {
+			  font-size: 28px;
+			}
+		}
+		> li::before {
+		  margin-right: -60px;
+		  top: 60px;
+		}
+		> li::after {
+		  margin-left: -64px;
+		  top: 60px;
+		}
+	}
+	&.theme-colored li a {
+		color: @white-base;
+	}
+}

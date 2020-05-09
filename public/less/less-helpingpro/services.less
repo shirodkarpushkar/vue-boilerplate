@@ -1,0 +1,33 @@
+/*
+ * services.less
+ * -----------------------------------------------
+*/
+.rotated-service-box {    
+
+  position: relative;
+
+  .icon {
+    background-color: @gray-lightgray;
+    display: inline-block;
+    height: 90px;
+    left: 0;
+    margin: 0 auto;
+    padding: 30px;    
+    position: absolute;
+    right: 0;
+    top: -45px;
+    .rotate(45deg);
+    width: 90px;
+
+    i {
+      color: @white-base;
+      font-size: 32px;
+      .rotate(-45deg);
+    }
+
+  }
+
+  .heading  {
+	  .transition(all .2s ease-in-out);
+  }
+}

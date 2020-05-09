@@ -1,0 +1,78 @@
+/*
+ * Shortcode: clients.less
+ * -----------------------------------------------
+*/
+.clients-logo {
+	.item {
+		background: @gray-lighter;
+		border-color: transparent;
+		box-shadow: 0 0 0 10px fade(@white-base, 100%);
+		margin-bottom: 30px;
+		padding: 10px;
+		.transition(all .3s ease 0s);
+	}
+
+	img {
+		width: auto;
+		display: inline;
+		opacity: 0.8;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+	
+}
+
+.clients-logo {
+	&.carousel {
+		text-align: center;
+		.item {
+			box-shadow: none;
+			margin: 0 10px;
+		}
+	}
+}
+
+.clients-logo {
+	&.style2 {
+		.item {
+			box-shadow: none;
+
+			img {
+				max-height: 120px;
+			}
+		}
+		
+	}
+}
+
+.client-img {
+	opacity: 0.6;
+	text-align: center;
+	.transition(all .3s ease 0s);
+
+	&:hover {
+		opacity: 1;
+	}
+
+	img {
+		max-height: 90px;
+	}
+}
+
+.clients-logo {
+	&.carousel {
+		text-align: center;
+		.item {
+			box-shadow: none;
+			margin: 0 10px;
+		}
+	}
+}
+
+.clients-logo.transparent .item {
+	background: transparent none repeat scroll 0 0;
+	box-shadow: none;
+	margin-bottom: 10px;
+}

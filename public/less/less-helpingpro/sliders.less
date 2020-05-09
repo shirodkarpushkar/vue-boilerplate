@@ -1,0 +1,492 @@
+/*
+ * sliders.less
+ * -----------------------------------------------
+*/
+
+/* -------- Rev Slider ---------- */
+#home {
+	.revslider-fullscreen {
+		min-height: auto;
+	}
+}
+
+/* -------- Home Revolution Slider For Minimal Layouts ---------- */
+.minimal-revslider-wrapper {
+	left: 0;
+	width: 100%;
+	.tp-leftarrow {
+		left: 0;
+	}
+	.tp-rightarrow {
+		right: 0;
+	}
+}
+
+/* -------- Tab-Slider ---------- */
+.tab-slider {
+	.tab-content {
+		padding: 0;
+		border: 0;
+	}
+	.nav {
+		&.nav-pills {
+			> div {
+				background-color: @white-base;
+				float: left;
+				margin-bottom: 15px;
+				.transition(all .3s ease)
+			}
+			i{
+				color: @gray-lightgray;
+			}
+
+			a {
+				display: block;
+				padding: 40px 30px;
+				background: @white-f3;
+				&:hover i,
+				&:hover h6,
+				&.active i,
+				&.active h6 {
+					color: @white-base;
+				}
+			}
+
+		}
+	}
+}
+
+/* -------- MaxImage Slider ---------- */
+.maximage-slider {
+	.fullscreen-controls {
+		.img-prev,
+		.img-next {
+  			background: fade(@black, 30%);
+		}
+	}
+}
+
+/* -------- Testimonial-Carousel ---------- */
+.testimonial-carousel,
+.testimonial-carousel-style2 {
+	.quote, 
+	.thumb {
+		margin-bottom: 40px;
+	}
+	.quote i {
+		background: @black-555;
+		border-radius: 50%;
+		color: @white-base;
+		font-size: 25px;
+		height: 60px;
+		line-height: 1;
+		padding: 20px 0 0;
+		text-align: center;
+		width: 60px;
+	}
+	.author {
+		margin-top: 30px;
+		text-transform: uppercase;
+	}
+	&.owl-theme {
+		.owl-controls {
+			margin-top: 10px;
+		}
+	}
+	/* fullwidth */
+	&.fullwidth {
+		.content{
+			p {
+				font-size: 15px;
+				font-style: italic;
+				color: @white-base;
+				&::after {
+				  content: "\f10e";
+				  font-family: fontawesome;
+				  font-size: 100px;
+				  left: 42%;
+				  opacity: 0.1;
+				  position: absolute;
+				}
+			}
+		} 
+	}
+	&.bullet-white {
+		.owl-dots {
+			span {
+				background: @white-base;
+			}
+		}
+	}
+	.owl-item {
+		img {
+			display: inline-block;
+			width: auto;
+			max-width: 90px;
+		}	
+	}
+	&.boxed {
+		.quote,
+		.thumb {
+			margin-bottom: 20px;
+		}
+		.owl-item {
+			img {
+				display: inline-block;
+				width: auto;
+				max-width: 65px;
+			}
+		}
+		.content::after {
+		  bottom: 12px;
+		  content: "\f10e";
+		  font-family: fontawesome;
+		  font-size: 55px;
+		  opacity: 0.2;
+		  position: absolute;
+		  right: 10px;
+		}
+		.owl-controls {
+    		margin-top: 0;	
+		}
+		&.owl-theme {
+			.owl-dots {
+				.owl-dot {
+					&.active,
+					&:hover {
+						span {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* -------- Widget-Testimonial-Carousel ---------- */
+.widget-testimonial-carousel {
+	.item {
+		img {
+			max-width: 75px;
+			float: right;
+		}
+	}
+}
+
+/* -------- Owl Carousel ---------- */
+.owl-controls {
+	margin: 0;
+	.owl-nav > div {
+		background: none repeat scroll 0 0 rgba(240,240,240,0.8);
+		border-radius: 0;
+		display: block;
+		margin: -40px 0 0;
+		padding: 10px;
+		position: absolute;
+		top: 50%;
+		-webkit-transition: all .4s ease 0s;
+		-moz-transition: all .4s ease 0s;
+		-ms-transition: all .4s ease 0s;
+		-o-transition: all .4s ease 0s;
+		transition: all 0.4s ease 0s;
+		z-index: 6;
+	}
+	.owl-next {
+		right: 0px;
+		i {
+			color: #888;
+			font-size: 20px;
+		}
+	}
+	.owl-prev {
+		i {
+			color: #888;
+			font-size: 20px;
+		}
+	}
+}
+/* owl dots */
+.owl-theme .owl-dots {
+	text-align: center;
+	margin-top: 10px;
+	.owl-dot {
+		display: inline-block;
+		zoom: 1;
+		span {
+			background: @white-base;
+			border: 2px solid @gray-lighter;
+			border-radius: 50%;
+			display: block;
+			height: 12px;
+			margin: 5px 3px;
+			opacity: 0.8;
+			-webkit-transition: all 0.4s ease 0s;
+			-o-transition: all 0.4s ease 0s;
+			transition: all 0.4s ease 0s;
+			width: 12px;
+		}
+	}
+}
+
+/* Image Carousel */
+.image-carousel .owl-controls .owl-nav > div {
+	opacity: 0;
+}
+.image-carousel:hover .owl-controls .owl-nav > div {
+	opacity: 1;
+}
+
+/* Owl top nav style */
+.owl-carousel.owl-nav-top {
+	&.bullet-white {
+		.owl-dots {
+			span {
+				background: @white-base;
+			}
+		}
+	}
+
+	.owl-controls {
+		.owl-nav {
+			> div {
+				background-color: transparent;
+			    top: 0px;
+			    right: 0;
+
+			    &:hover {
+			    	background-color: @gray-lightgray;
+			    }
+			}
+
+			.owl-prev {
+				right: 35px;
+			}
+
+			.owl-next{
+				right: 0;
+			}
+
+			.owl-prev,
+			.owl-next {
+				background: @gray-lighter;
+				border: none;
+				line-height: 14px;
+				padding: 4px 5px;
+				text-align: center;
+
+				i {
+					color: #888;
+				    font-size: 18px;
+				    font-weight: 600;
+				}
+			}
+		}
+	}
+}
+
+.owl-carousel.no-bullet .owl-nav {
+  display: none;
+}
+.recent-project {
+	.owl-controls {
+		.owl-nav > div {
+			top: 38%;
+		}
+		.owl-nav {			
+			.owl-prev i,
+			.owl-next i {
+					padding: 2px 16px;
+			}
+		}
+	}
+
+}
+
+.featured-gallery {
+	&.style2 {
+    	float: right;
+		width: 92%;
+		.owl-controls {
+			bottom: 58px;
+			left: -80px;
+			margin: 0;
+			position: absolute;
+			.owl-nav > div {
+				top: 95%;
+			}
+			.owl-nav {
+				.owl-prev {
+					left: 0px;
+				}
+				.owl-next {
+				  display: inline-table;
+				  left: 40px;
+				}
+				.owl-prev i,
+				.owl-next i {
+					color: @white-base;
+					font-size: 35px;
+				}
+
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width : 991px) {
+	.featured-gallery {
+		&.style2 {
+		    float: none;
+	    	margin-top: 58px;	    
+			width: 100%;
+			.owl-controls {
+				bottom: auto;
+				left: auto;
+				top: -45px;
+			}
+		}	
+	}
+}
+
+.image-carousel {
+	.owl-controls {
+		.owl-nav > div {
+			opacity: 0;
+		}
+	}
+	&:hover {
+		.owl-controls {
+			.owl-nav > div {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* -------- Owl Fullwidth Carousel ---------- */
+.fullwidth-carousel {
+	.owl-controls {
+		.owl-nav > div {
+			top: 45%;
+		}
+	}
+	.carousel-item {
+		min-height: 615px;
+		width: 100%;
+	}
+	&.blog-fullwidth-carousel {
+		.carousel-item {
+			height: 600px;
+			min-height: auto;
+			width: 100%;
+		}
+		.owl-controls {
+			.owl-nav > div {
+				background: none;
+			}
+
+		}
+	}
+}
+
+/* -------- Twitter Feed Carousel ---------- */
+.owl-dots-bottom-right .owl-dots {
+  bottom: -10px;
+  position: absolute;
+  right: 0;
+}
+
+/* -------- Twitter Feed Carousel ---------- */
+.twitter-feed {
+	&.twitter-carousel {
+		color: @black-111;
+		font-size: 16px;
+		a {
+			color: @black-111;
+		}
+	}
+	.date {
+		font-size: 12px;
+	}
+	&.twitter-white,
+	&.twitter-white a {
+		color: @white-base;
+	}
+}
+
+/* -------- BX Slider ---------- */
+.bx-wrapper {
+  margin: 0 auto 7px;
+  padding: 0;
+  position: relative;
+}
+.bx-wrapper .bx-viewport {
+  background: inherit;
+  border: 0 solid #fff;
+  box-shadow: 0 0 0 #ccc;
+  left: 0;
+  transform: translateZ(0px);
+}
+/* bx top nav style */
+.bx-controls .bx-controls-direction > a {
+    background: #eee none repeat scroll 0 0;
+    border: medium none;
+    height: auto;
+    line-height: 28px;
+    padding: 0 12px;
+    width: auto;
+    text-indent: 0;
+    top: -42px;
+    z-index: 0;
+}
+.bx-controls .bx-controls-direction > a:hover {
+	background: #ddd;
+}
+.bx-controls .bx-controls-direction > a i {
+	color: #888;
+}
+.bx-controls .bx-controls-direction .bx-prev {
+    right: 35px;
+    left: auto;
+}
+.bx-controls .bx-controls-direction .bx-next {
+    right: 0;
+}
+
+/* -------- Typed Animation Slider ---------- */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.dots-left .owl-dots {
+  margin-left: 10px;
+  margin-top: 30px;
+  text-align: left;
+}
+.dots-left-no-space .owl-dots {
+  text-align: left;
+}
+
+.owl-carousel .owl-item .testimonial-wrapper img {
+  display: inline-block;
+  width: 75px;
+}

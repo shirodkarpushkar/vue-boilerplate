@@ -1,0 +1,61 @@
+/*
+ * Shortcode: progress-bar.less
+ * -----------------------------------------------
+*/
+.progress-item {
+	margin-top: 20px;
+	.progress {
+		background-color: @white-f8;
+		box-shadow: 0 0 1px fade(@black, 40%) inset;
+		border-radius: 0;
+		height: 14px;
+		margin-bottom: 15px;
+		overflow: visible;
+	}
+
+	.progress-bar {
+		border-radius: 30px;
+        font-size: 12px;
+        line-height: 12px;
+        padding-left: 10px;
+        position: relative;
+        text-align: left;
+        width: 0;
+		.transition(all 1s ease 0s);
+		.percent {
+			background-color: #FF5722;
+			border-radius: 0 7px 7px 0;
+			padding: 0 8px;
+			position: absolute;
+			right: -10px;
+			top: 0px;
+		}
+	}
+
+	&.progress-white {
+		.progress {
+			padding: 2px;
+		}
+	}
+
+	&.style2 {
+		.progress {
+			height: 25px;
+		}
+
+		.progress-bar {
+            		    span {
+              color: #fff !important;
+              right: 0;
+              top: 6px;
+            }
+			.percent {
+				background: none;
+				color: @black-555;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+

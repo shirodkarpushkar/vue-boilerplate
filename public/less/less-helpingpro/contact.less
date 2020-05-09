@@ -1,0 +1,45 @@
+/*
+ * contact.less
+ * -----------------------------------------------
+*/
+.contact-wrapper {
+	padding: 50px 50px 50px 100px;
+}
+.contact-form {
+	.form-group {
+		margin-bottom: 20px;
+	}
+
+	.form-control {
+		background-image: none;
+		border: 1px solid @gray-silver;
+		border-radius: 0;
+		box-shadow: none;
+		height: 48px;
+
+		&:focus,
+		&:active {
+			box-shadow: none;
+			color: @black-333;
+		}
+	}
+
+	.form-control2 {
+		background-color: fade(@black, 80%);
+		color: @gray-silver;
+	}
+
+	.form-group button {
+		margin-top: 0;
+	}
+	textarea {
+		&.form-control {
+			height: 110px;
+			resize: none;
+		}
+	}
+}
+
+textarea {
+	resize: none;
+}

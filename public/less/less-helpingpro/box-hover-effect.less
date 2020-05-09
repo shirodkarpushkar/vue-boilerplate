@@ -1,0 +1,261 @@
+/*
+ *  box-hover-effect.less
+ * -----------------------------------------------
+*/
+.box-hover-effect {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+
+	img {
+		position: relative;
+		display: block;
+		max-height: 100%;
+		max-width: 100%;
+		opacity: 1;
+		.transition(all .3s ease 0s);
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.backface-visibility(hidden);
+		.transition(all .3s ease 0s);
+
+		&::before,
+		&::after {
+			pointer-events: none;
+		}
+
+		.details {
+			.transition(all .3s ease 0s);
+		}
+
+		.title {
+			.transition(all .3s ease 0s);
+		}
+
+		.para {
+			.transition(all .3s ease 0s);
+		}
+
+		.entry-meta {
+			bottom: 10px;
+			font-size: 70%;
+			opacity: 0;
+			position: absolute;
+			width: 89%;
+			.transition(all .3s ease 0s);
+
+			&.top {
+				top: 10px;
+			}
+
+			i {
+				color: @white-base;
+			}
+		}
+
+		.icons {
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			text-align: center;
+			top: 40%;
+			width: 100%;
+			.transition(all .3s ease 0s);
+		}
+	}
+
+	&:hover {
+		.overlay {
+			background: fade(@black, 85%);
+
+			&.white {
+				background: fade(@white-base, 75%);
+			}
+
+			&.black {
+				background: fade(@black, 85%);
+			}
+
+			.entry-meta {
+				opacity: 1;
+			}
+
+			.icons {
+				opacity: 1;
+
+				i {
+					color: @white-base;
+				}
+
+				&.twin {
+					i {
+						padding: 10px;
+					}
+				}
+
+				&.bordered {
+					i {
+						border: 1px solid @white-base;
+
+						&.text-black {
+							border-color: @black;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.shadow-overlay {
+	background-image: url("../images/shadow-overlay.png");
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	bottom: 0;
+	color: @white-base;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* Individual effects */
+
+/* -------- effect1 ---------- */
+.box-hover-effect.effect1 .thumb {
+	position: relative;
+	overflow: hidden;
+}
+.box-hover-effect.effect1 .thumb:before {
+	background-color: rgba(255,255,255,0.5);
+	left: -40%;
+	content: "";
+	height: 150%;
+	opacity: 0;
+	position: absolute;
+	top: -40%;
+	transition: all 0.3s ease-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+
+	-webkit-transform: rotate(-70deg);
+	-moz-transform: rotate(-70deg);
+	-ms-transform: rotate(-70deg);
+	-o-transform: rotate(-70deg);
+	transform: rotate(-70deg);
+	width: 100%;
+	z-index: 1;
+}
+.box-hover-effect.effect1:hover .thumb:before {
+	opacity: 1;
+}
+.box-hover-effect.effect1:hover .thumb img {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/* -------- effect2 ---------- */
+.box-hover-effect {
+	&.effect2 {
+		.thumb {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.overlay {
+			.overlay-details {
+				opacity: 0;
+				.scale(0.8, 0.8);
+				.transition(all 0.5s ease);
+			}
+		}
+
+		&:hover {
+			.overlay-details {
+				opacity: 1;
+				.scale(1, 1);
+			}
+
+			.details {
+				opacity: 0;
+			}
+
+			img {
+				.scale(2);
+				.transition(all 0.5s ease);
+			}
+		}
+	}
+}
+
+/* -------- effect3 ---------- */
+.box-hover-effect{
+	&.effect3 {
+		.overlay {
+			position: relative;
+		}
+
+		.thumb {
+			position: relative;
+
+			&:after {
+				  background-color: fade(@white-base, 15%);
+				  bottom: 0;
+				  content: "";
+				  height: 0;
+				  position: absolute;
+				  right: 0;				  
+				  .transition(all 0.3s ease-out 0s);
+				  width: 0;
+			}
+
+			&:before {
+				background-color: fade(@white-base, 15%);
+				  left: 0;
+				  content: "";
+				  height: 0;
+				  position: absolute;
+				  top: 0;
+				  .transition(all 0.3s ease-out 0s);
+				  width: 0;
+				  z-index: @zindex-box-hover-effect-effect1-thumb-before;
+			}
+		}
+
+		&:hover {
+			.thumb {
+				&:before,
+				&:after {
+					height: 100%;
+					width: 100%;
+				    .transition(all 0.4s ease-out 0s);
+				}
+			}
+		}
+	}
+}
+
+/* -------- Custom Theme Style ---------- */
+.box-hover-effect {
+	&.effect2 {
+		.overlay {
+			&.white {
+				.overlay-details {
+					p {
+						color: @gray-light;
+					}
+				}
+
+			}
+		}
+	}
+}

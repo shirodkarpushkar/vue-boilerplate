@@ -1,0 +1,60 @@
+/*
+ * Shortcode: flex-slider.less
+ * -----------------------------------------------
+*/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {
+    outline: none;
+    border: none;
+}
+.flex-direction-nav {
+    display: none;
+}
+.flexslider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+		border: 0;
+}
+.flex-viewport {
+    max-height: 2000px;
+    .transition(all 1s ease);
+}
+.flex-control-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    width: auto;
+
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    bottom: 15px;
+    right: 15px;
+
+    li {
+        float: left;
+        display: block;
+        margin: 0 3px;
+        width: 10px;
+        height: 10px;
+        a {
+            display: block;
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            .transition(all .3s ease-in-out);
+        }
+        &:hover a,
+        a.flex-active {
+            background-color: #fff;
+        }
+    }
+
+}

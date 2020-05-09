@@ -1,0 +1,63 @@
+/*
+ * Shortcode: countdown.less
+ * -----------------------------------------------
+*/
+.countdown-timer {
+	li {
+		color: @gray-base;
+		display: inline-block;
+		padding: 30px 20px;
+		background-color: @white-f1;
+		margin-right: 15px;
+		font-size: 40px;
+		text-align: center;
+		min-width: 120px;
+		min-height: 120px;
+
+		span {
+			color: @gray-silver;
+		    display: block;
+		    font-size: 15px;
+		    margin-top: 5px;
+		}
+	}
+
+	&.timer-box {
+		padding: 20px;
+		padding-top: 40px;
+		text-align: center;
+		li {
+			color: @white-base;
+			background-color: fade(@black, 5%);
+			margin-bottom: 15px;
+
+			span {
+				color: @gray-lighter;
+			}
+		}
+	}
+
+	&.timer-deep-bg {
+		li {
+			background-color: fade(@black, 5%);
+		}
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.timer-responsive li {
+		margin-top: 30px;
+		font-size: 20px;
+		min-width: 60px;
+		min-height: 60px;
+		padding: 20px 10px;
+	}
+	.countdown-timer li span {
+	    font-size: 12px;
+	}
+ }
+
+
+
+
+

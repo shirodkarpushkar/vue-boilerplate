@@ -1,0 +1,44 @@
+/*
+ * Shortcode: instagram.less
+ * -----------------------------------------------
+*/
+
+/* -------- Instagram-Feed ---------- */
+.instagram-feed-carousel,
+.instagram-feed {
+    figure {
+        position: relative;
+        .link-out {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background: fade(@black, 45%);
+            color: @white-f8;
+            line-height: 1;
+            padding: 10px;
+            font-weight: 300;
+            opacity: 0;
+
+            &:hover {
+                background: fade(@black, 70%);
+                color: @white-f8;
+            }
+        }
+
+        &:hover {
+            .link-out {
+                opacity: 1; 
+            }
+        }
+    }
+}
+
+/* -------- Instagram-Feed ---------- */
+.instagram-feed {
+    .item {
+        width: 100px;
+        float: left;
+        margin-bottom: 2px;
+        margin-right: 2px;
+    }
+}

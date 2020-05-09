@@ -1,0 +1,35 @@
+/*
+ * blockquote.less
+ * -----------------------------------------------
+*/
+blockquote {
+	border-left: 3px solid @gray-lighter;
+	margin: 20px 0;
+	padding: 30px;
+
+	&.gray {
+		border-left: 3px solid @gray-dimgray;
+		background-color: @gray-lighter;
+		color: @black-333;
+
+		&.bg-theme-colored {
+			background-color: @gray-lighter;
+		}
+	}
+
+	&.dark {
+		border-left: 3px solid darken(@black-555, 10%);
+		background-color: @black-555;
+		color: @white-base;
+
+		footer {
+			color: @gray-lightgray;
+		}
+	}
+
+	p {
+		font-family: "Playfair Display",serif;
+		font-size: 16px;
+		font-style: italic;
+	}
+}

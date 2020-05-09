@@ -1,0 +1,82 @@
+/*
+ *  boxed-layout.less
+ * -----------------------------------------------
+*/
+.boxed-layout {
+	.container {
+		max-width: 1170px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.header,
+	.main-content,
+	.footer {
+		margin: 0 auto;
+		max-width: 1170px;
+		box-shadow: 0 0 10px 1px #aaa;
+	}
+	.header,
+	section,
+	.footer {
+		background-color: @white-base;
+	}
+	.header {
+		margin-bottom: 15px;
+		.navbar-default {
+			background-color: @white-base;
+			border-color: @white-base;
+			padding: 0;
+
+			.navbar-nav {
+				> li {
+					> a {
+						padding: 30px 5px;
+					}	
+				}
+			}
+			.navbar-collapse {
+				background-color: @white-base;
+				border-color: @white-base;
+				margin-right: 30px;
+			}
+		}
+		#header-logo {
+			margin: 0;
+			padding-top: 27px;
+		}
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.boxed-layout {
+		padding-top: 0;
+		.header {
+			.navbar-default {
+				.navbar-nav {
+					> li {
+						> a {
+							padding: 10px;
+						}
+					}
+				}
+				.navbar-collapse {
+					margin-right: 15px;
+				}
+			}
+		}
+		.navbar-header {
+			padding: 15px 0;
+		}
+		.navbar-collapse {
+			.navbar-nav {
+				li {
+					a {
+						.caret {
+							margin-right: 0;
+						}
+					}	
+				}
+			}
+		}
+	}
+}

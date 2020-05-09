@@ -1,0 +1,426 @@
+/*
+ * Widgets.less
+ * -----------------------------------------------
+*/
+
+/* -------- Top Search Bar ---------- */
+.search-form-wrapper {
+	position: relative;
+
+	&.toggle {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	form {
+		padding: 10px;
+		position: relative;
+
+		label {
+			margin: 0px;
+			position: absolute;
+			right: 11px;
+			top: 11px;
+
+			&:before {
+				color: @black-555;
+				cursor: pointer;
+				content: "\f002";
+				font-family: fontawesome;
+				font-size: 16px;
+				position: absolute;
+				right: 13px;
+				top: 6px;
+			}
+		}
+
+		input[type="text"] {
+			background-color: @white-base;
+			border: 1px solid @gray-silver;
+			height: 46px;
+			padding: 8px 17px;
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			background-color: @white-base;
+			border-left: 1px solid @gray-silver;
+			border: none;
+			height: 44px;
+			width: 50px;
+			text-indent: -999px;
+		}
+	}
+	/* form absolute */
+	&.form-absolute {
+		form {
+			background-color: @black-333;
+			position: absolute;
+			right: 0px;
+			top: 12px;
+				width: 370px;
+			z-index: @zindex-form-absolute-form;
+		}
+	}
+}
+
+/* -------- Form Round ---------- */
+.search-form-wrapper {
+	&.round {
+		form {
+			input[type="text"] {
+				border-radius: 30px;
+				border-width: 4px;
+			}
+
+			input[type="submit"] {
+				height: auto;
+				width: auto;
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+
+			label {
+				&::before {
+					color: @gray-silver;
+				}
+			}
+		}
+	}
+}
+
+.widget {
+	.list-border li {
+		border-bottom: 1px dashed @gray-lightgray;
+	}
+}
+
+.widget {
+	&.dark {
+		.list-border li {
+			border-bottom: 1px dashed @black-444;
+		}
+	}
+}
+
+/* -------- Footer & Sidebar Widgets ---------- */
+.widget {
+	margin-bottom: 30px;
+
+	.widget-title {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	ul li {
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	ul.list li,
+	.post {
+		margin-bottom: 8px;
+		padding-bottom: 8px;
+	}
+
+	&.brochures {
+		> li {
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+
+		i {
+			color: @gray-dimgray;
+		    font-size: 16px;
+		    margin-right: 10px;
+		}
+	}
+
+	&.address {
+		> li {
+			font-size: 13px;
+		    margin-bottom: 10px;
+		    padding: 5px 10px;
+
+		    i {
+		    	font-size: 16px;
+				margin-right: 8px;
+				vertical-align: middle;
+		    }
+		}
+	}
+
+	.twitter-feed {
+		li {
+			font-size: 13px;
+			margin-bottom: 15px;
+			margin-top: 0px;
+			padding-left: 30px;
+
+			&.item {
+				position: relative;
+			}
+
+			&::after {
+				content: "\f099";
+				font-size: 24px;
+				font-family: fontawesome;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
+
+	.styled-icons li {
+		margin-bottom: 0;
+		padding-bottom: 0;
+
+		a {
+			margin-bottom: 0;
+		}
+	}
+
+	.tags {
+		a {
+			border: 1px solid #ddd;
+			display: inline-block;
+			font-size: 12px;
+			margin: 5px 4px 5px -2px;
+			padding: 5px 10px;
+
+			&:hover {
+				color: @white-base;
+			}
+		}
+	}
+
+	.search-input {
+		background: transparent none repeat scroll 0 0;
+		border: 1px solid @gray-silver;
+		border-radius: initial;
+		box-shadow: none;
+		height: 45px;
+		padding: 10px;
+	}
+
+	.search-button {
+		background: transparent none repeat scroll 0 0;
+		border: 1px solid @gray-silver;
+		border-radius: 0;
+		height: 45px;
+	}
+
+	.nav-tabs {
+		li {
+			border-bottom: 1px solid transparent;
+			margin-bottom: -2px;
+			padding-bottom: 0;
+		}
+		li:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+	
+	.post-title a {
+		font-size: 13px;
+		letter-spacing: 0;
+	}	
+
+	.quick-contact-form {
+		.form-control {
+			background-color: fade(@white-f1, 80%);
+			border-color: @gray-lightgray;
+			color: @gray-darkgray;
+		}
+	}
+
+	.product-list {
+		.product-title {
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+}
+
+.widget {
+	&.dark {
+
+		.widget-title {
+			color: @white-base;
+		}
+
+		.tags a {
+		    border: 1px solid @black-444;
+		}
+		.widget-image-carousel {
+			.title {
+				color: @white-base;
+			}
+		}	
+
+		.search-input {
+			border: 1px solid @black-333;
+		}
+
+		.styled-icons li a:hover i {
+			color: @white-base;
+		}
+
+		.search-button {
+			border: 1px solid @black-333;
+		}
+
+		.widget-subscribe {
+			.subscribe-title {
+			  color: @white-base;
+			}
+
+			.subscribe-sub-title {
+			  color: @gray-dimgray;
+			}
+		}
+		
+		.nav-tabs {
+
+			li {
+				border-bottom: 1px solid transparent;
+				margin-bottom: -2px;
+				padding-bottom: 0;
+			}
+
+			li:hover {
+				border-bottom: 1px solid transparent;
+			}
+
+			li:hover a {
+				border: 1px solid @black-555;
+			}
+
+			li.active a {
+				-moz-border-bottom-colors: none;
+				-moz-border-left-colors: none;
+				-moz-border-right-colors: none;
+				-moz-border-top-colors: none;
+				background: @black-333 none repeat scroll 0 0;
+				border-color: @black-555 @black-555 transparent;
+				border-image: none;
+				border-style: solid;
+				border-width: 1px;
+			}
+		}
+
+		.product-title a {
+			color: @gray-base;
+		}
+
+		.post-title a {
+			color: @gray-silver;
+		}
+
+		.tab-content {
+			background: @black-333 none repeat scroll 0 0;
+			border: 1px solid @black-555;
+		}
+
+		.quick-contact-form {
+			.form-control {
+				background-color: rgba(5, 15, 5, 0.1);
+				border-color: @black-333;
+			}
+		}
+
+		.widget-title.line-bottom{
+		  border-bottom: 1px solid #444;
+		}
+
+	}
+}
+
+.widget {
+	&.no-border {
+		ul li {
+			border: none;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+.widget ul.list li::before {
+  display: none;
+}
+
+.widget.dark ul.list li::before {
+  display: none;
+}
+/* --------Horizontal Contact Widget  ---------- */
+.horizontal-contact-widget {
+	border-top: 1px dashed @black-666;
+
+	.each-widget {
+		&::before {
+		  content: "\f111";
+		  font-family: FontAwesome;
+		  left: 0;
+		  position: absolute;
+		  right: 0;
+		  top: -42px;
+		}
+	}
+}
+
+/* -------- Horizontal Contact Widget Dark ---------- */
+.horizontal-contact-widget {
+	&.dark {
+		border-top: 1px dashed @black-333;
+	}
+}
+.widget.dark .btn.btn-default {
+  border-color: #333;
+}
+
+/* -------- Flickr-Feed ---------- */
+#flickr-feed img {
+	background: none repeat scroll 0 0 @black;
+	float: left;
+	height: 60px;
+	margin: 0 5px 5px 0;
+	padding: 0;
+	width: 70px;
+}
+
+.text-hover-theme-colored {
+	.transition(all .3s ease);
+}
+
+.widget .services-list li {
+	background-color: @gray-lighter;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 15px 10px 20px;
+}
+.widget .services-list li.active {
+	position: relative;
+	border-bottom: 1px solid transparent;
+}
+.widget .services-list li.active a {
+	color: @white-base;
+}
+.widget .services-list li.active::after {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-image: none;
+	border-style: solid;
+	border-width: 21px;
+	bottom: 0;
+	content: "";
+	height: 21px;
+	left: -42px;
+	position: absolute;
+	top: 0;
+	width: 23px;
+}

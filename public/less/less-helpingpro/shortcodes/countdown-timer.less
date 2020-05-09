@@ -1,0 +1,28 @@
+/*
+ * Shortcode: countdown-timer.less
+ * -----------------------------------------------
+*/
+.home-countdown > li {
+    border: 2px solid #fff;
+    margin-right: 10px;
+    padding: 12px 10px 20px;
+    text-transform: uppercase;
+}
+.home-countdown > li > span {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	display: inline-block;
+	position: relative;
+}
+.home-countdown > li > span:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 25px;
+	background: @white-base;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 103%;
+}

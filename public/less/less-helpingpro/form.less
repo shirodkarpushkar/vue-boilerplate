@@ -1,0 +1,74 @@
+/*
+ * form.less
+ * -----------------------------------------------
+*/
+
+/* -------- Form ---------- */
+.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+	font-size: 14px;
+}
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+	height: 45px;
+}
+label {
+	font-weight: normal;
+}
+.form-control:focus, form input[type="text"]:focus, form input[type="email"]:focus, form input[type="number"]:focus, form input[type="url"]:focus, form input[type="search"]:focus, form input[type="tel"]:focus, form input[type="password"]:focus, form input[type="date"]:focus, form input[type="color"]:focus, form select:focus, form textarea:focus {
+	color: @black-444;
+	border-color: fade(@black, 30%);
+	-webkit-box-shadow: 0 0 3px fade(@black, 10%);
+	-moz-box-shadow: 0 0 3px fade(@black, 10%);
+	box-shadow: 0 0 3px fade(@black, 10%);
+	outline: none;
+}
+.form-transparent {
+	.form-control {
+		background: transparent;
+		color: @white-f7;
+	}
+	.form-control:focus, form input[type="text"]:focus, form input[type="email"]:focus, form input[type="number"]:focus, form input[type="url"]:focus, form input[type="search"]:focus, form input[type="tel"]:focus, form input[type="password"]:focus, form input[type="date"]:focus, form input[type="color"]:focus, form select:focus, form textarea:focus {
+		color: @white-f7;
+	}
+}
+.form-transparent textarea.form-control,
+.form-white textarea.form-control {
+  height: 150px;
+}
+.form-white .form-control {
+	background: @white-base;
+}
+.form-transparent.form-line .form-control {
+  border: none;
+  border-bottom: 1px solid @gray-silver;
+  padding-left: 0;
+}
+ .form-transparent.form-line textarea.form-control {
+ 	height: 70px;
+ }
+ form label {
+ 	font-weight: bold;
+ }
+
+ /* form error */
+ form .form-control.error {
+ 	border: 2px solid #ee163b;
+ }
+ form .error {
+ 	color: #ee163b;
+ }
+
+/* -------- Donation Form ---------- */
+ .donation-form .form-group label.radio-inline {
+ 	color: @gray-base;
+ }
+
+ /*-------- form-text-white ---------*/
+ .form-text-white {
+ 	.form-group {
+ 		label {
+ 			color: @white-base;
+ 		}
+ 	}
+ }

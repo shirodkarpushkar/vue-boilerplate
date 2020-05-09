@@ -1,0 +1,171 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@black:         		 #000;
+@black-111:           	 lighten(@black, 6.5%);  // #111
+@black-222:              lighten(@black, 13.5%); // #222
+@black-333:              lighten(@black, 20%);   // #333
+@black-444:              lighten(@black, 25%);   // #444
+@black-555:              lighten(@black, 33.5%); // #555
+@black-666:              lighten(@black, 40%);   // #666
+@black-777:              lighten(@black, 46.5%); // #666
+@black-999:           	 lighten(@black, 60%);   // #999999
+
+@gray-dimgray:           lighten(@black, 40%);   // #696969
+@gray-light:             lighten(@black, 46.7%); // #777
+@gray-base:           	 lighten(@black, 50%);   // #808080
+
+@gray-darkgray:          #a9a9a9;
+@gray-silver:            #c0c0c0;
+@gray-silver-light:      #f9f8f8;
+@gray-lightgray:         #d3d3d3;
+@gray-gainsboro:         #dcdcdc;
+
+@gray-lighter:          lighten(@black, 93.5%); // #eee
+
+
+
+//## White colors
+@white-base:             #fff;
+@white-f1:           	 #f1f1f1;
+@white-f2:           	 #f2f2f2;
+@white-f3:           	 #f3f3f3;
+@white-f4:           	 #f4f4f4;
+@white-f5:           	 #f5f5f5;
+@white-f6:           	 #f6f6f6;
+@white-f7:           	 #f7f7f7;
+@white-f8:           	 #f8f8f8;
+@white-f9:           	 #f9f9f9;
+@white-fa:           	 #fafafa;
+@white-fb:           	 #fbfbfb;
+@white-fc:           	 #fcfcfc;
+@white-fd:           	 #fdfdfd;
+@white-fe:           	 #fefefe;
+
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               @white-base;
+//** Global text color on `<body>`.
+@text-color:            @black-666;
+
+//** Global textual link color.
+@link-color:            @gray-base;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: none;
+
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-opensans:           'Open Sans', sans-serif;
+@font-raleway:            'Raleway', sans-serif;
+@font-trirong:            'Trirong', serif;
+
+@body-font:               @font-opensans;
+@heading-font:            @font-opensans;
+@secondary-font:          @font-opensans;
+
+@font-size-base:          14px;
+@font-size-large:         18px;
+@font-size-small:         12px;
+
+@font-size-h1:            3.40rem;
+@font-size-h2:            2.00rem;
+@font-size-h3:            24px;
+@font-size-h4:            18px;
+@font-size-h5:            14px;
+@font-size-h6:            12px;
+
+
+
+//== Line Height
+//
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+// line height for paragraph
+@line-height-content:           1.7;
+
+//== Headings
+//
+@headings-font-family:    @heading-font;
+@headings-font-weight-h1-h2:    800;
+@headings-font-weight-h3-h6:    700;
+@headings-line-height:    @line-height-base;
+@headings-color:          @black-333;
+
+
+//== Folder Path
+//
+@icon-font-path:          "../fonts/";
+@images-path:             "../images/";
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+@btn-font-weight:                normal;
+
+//btn-default
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+//btn-link
+@btn-link-color:              	 #333;
+
+//btn-border
+@btn-border-color:              @black-222;
+@btn-border-bg:                 #fff;
+@btn-border-border:             @black-222;
+
+//btn-dark
+@btn-dark-color:              	 #fff;
+@btn-dark-bg:                 	 @black-222;
+@btn-dark-border:                @black-222;
+
+//btn-gray
+@btn-gray-color:              	 @black-333;
+@btn-gray-bg:                 	 @gray-lightgray;
+@btn-gray-border:                @gray-lightgray;
+
+
+//-- Z-index master list
+@zindex-testimonial:         			9999;
+@zindex-1000:                			1000;
+@zindex-side-push-panel-body-overlay:   -1;
+@zindex-side-push-panel-side-panel-open-body-overlay:   1111;
+@zindex-side-panel:   1112;
+@zindex-side-panel-trigger:   11;
+@zindex-form-absolute-form:   99;
+@zindex-vertical-header-header:   101;
+@zindex-owl-controls-owl-nav-div:   6;
+@zindex-toggle-map:   200;
+@zindex-layer-overlay-before:   0;
+@zindex-maximage-layer-overlay-before:  1;
+@zindex-box-hover-effect-overlay-a:  1000;
+@zindex-box-hover-effect-effect1-thumb-before:  1;
+@zindex-bg-video:  -1;
+@zindex-display-table:  1;
+@zindex-cs-carousel-post-icon:  10;
+@zindex-cs-carousel-container-post-thumb-cs-carousel-details:  10;
+@zindex-bg-video-video-mbYTP_wrapper:  -1;
+@zindex-header-nav-navbar-fixed-top:  1030;
+@zindex-display-table:  1;
+@zindex-scrollToTop:  99999;
+@zindex-header-nav-header-nav-absolute-wrapper-responsive:  1111;

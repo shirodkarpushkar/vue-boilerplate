@@ -1,0 +1,140 @@
+
+/*
+ * Blog 
+ * -----------------------------------------------
+*/
+
+.post {
+
+	.entry-header {
+		position: relative;
+		overflow: hidden;
+	}
+	.entry-title {
+		margin-top: 0;
+	}
+
+	.entry-content {
+		padding: 15px 20px 25px;
+	}
+	.entry-date {
+		font-size: 13px;
+	}
+
+	.entry-meta {
+		&.meta-absolute {
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			i {
+				display: block;
+				font-size: 28px;
+			}
+
+			span a {
+				color: #454545;
+			    font-size: 12px;
+			    font-style: italic;
+			    letter-spacing: 2px;
+			    margin-right: 5px;
+			}
+		}
+	}
+	&.media-post  {
+
+		.post-thumb {
+			float: left;    
+			margin: 0 10px 10px 0;
+		}
+	}
+
+	.post-thumb {
+		.transition(all .2s ease-in-out); 
+	}
+
+	&:hover {
+		.post-thumb {
+		}
+	}
+
+}
+
+/*
+ * Blog Style 2
+ * -----------------------------------------------
+*/
+.post.style2,.post.style3 {
+	position: relative;
+	overflow: hidden;
+	.entry-content {
+		background-color: fade(@black, 80%);
+		bottom: -30px;
+		left: 0;
+		padding: 30px;
+		position: absolute;
+		right: 0;
+		.transition(all 0.3s ease-in-out 0s);
+		
+		.entry-date {
+			font-size: 11px;
+			margin-bottom: 10px;
+		}
+	}
+	&:hover {
+		.entry-content {
+			bottom: 0;
+		}
+		.post-thumb
+				
+		 {
+			.scale(1);
+		}
+	}
+
+}
+
+.post .entry-header .entry-date {
+  position: absolute;
+  top: 0;
+  right: -44px;
+	.transition(all .3s ease-in-out); 
+}
+.post:hover .entry-header .entry-date {
+  right: 0;
+}
+.featured-blog {
+	overflow: hidden;
+	position: relative;
+}
+.featured-blog-details {
+	bottom: -18%;
+	padding: 30px;
+	position: absolute;
+	transition: all 400ms ease-in-out 0s;
+	width: 100%;
+}
+.featured-blog:hover .featured-blog-details {
+  bottom: 0;
+}
+.reply-box .form-group input {
+	border-radius: 0;
+	height: 45px;
+	margin-bottom: 30px;
+}
+
+.featured-blog {
+	overflow: hidden;
+	position: relative;
+}
+.featured-blog-details {
+	bottom: -18%;
+	padding: 30px;
+	position: absolute;
+	transition: all 400ms ease-in-out 0s;
+	width: 100%;
+}
+.featured-blog:hover .featured-blog-details {
+  bottom: 0;
+}

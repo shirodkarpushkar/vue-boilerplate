@@ -1,0 +1,223 @@
+/*
+ * Shortcode: tabs.less
+ * -----------------------------------------------
+*/
+.tab-content {
+	padding: 15px;
+	border: 1px solid @gray-lighter;
+}
+.nav-tabs {
+	border: none;
+	> li {
+		float: left;
+		margin-bottom: -1px;
+
+		&.active {
+			a,
+			a:hover,
+			a:focus {				
+				color: @black-111;
+				background-color: @white-f8;
+			}			
+		}
+
+		> a {
+			border-radius: 0;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 12px;
+			color: @black-555;
+			padding: 12px 20px;
+			margin-right: 0;
+			.fa {
+				margin-right: 10px;
+			}
+
+			&:hover,
+			&:focus {
+				color: @black-333;
+				background-color: transparent;
+			}
+
+			i {
+				font-size: 32px;
+				margin-right: 20px;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+/* -------- Nav Tabs ---------- */
+.nav-tabs {
+	> li {
+
+		text-align: center;
+		> a {
+
+			i {
+				display: block;
+				font-size: 48px;
+				margin-right: 0;
+				margin-bottom: 10px;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+/* -------- Horizontal-Tab-Centered ---------- */
+.horizontal-tab-centered {
+	.nav-pills {
+		display: inline-block;
+		> li {
+
+			> a {
+				background: @gray-lighter;
+				color: @black-555;
+				font-size: 14px;
+  				padding: 8px 10px;
+			    margin-right: 10px;
+			    margin-bottom: 10px;
+  				text-transform: capitalize;
+			    &:hover {
+					color: @white-base;
+				}
+
+				i {
+				  font-size: 14px;
+				  margin-right: 8px;
+				}
+			}			
+			&.active > a, 
+			&.active > a:hover, 
+			&.active > a:focus {
+				color: @white-base;
+			}
+		}
+	}
+}
+
+/* -------- Horizontal-Tab Fullwide ---------- */
+.horizontal-tab {
+	&.fullwide {
+		.nav-tabs {
+			> li {
+				width: 20%;
+			}
+		}
+	}
+}
+
+/* -------- Vertical Nav-Tabs ---------- */
+.vertical-tab {
+	.tab-content {
+		padding: 5px 5px 20px 20px;
+		border: none;
+	}
+	.nav-tabs {
+		> li {
+			float: none;
+			margin-bottom: 0;
+
+			> a {
+				background: none;
+				border-radius: 0;
+				border-bottom: 1px solid @gray-lightgray;
+				border-right: 1px solid @gray-lightgray;
+				border-top: 1px solid transparent;
+				border-left: 1px solid transparent;
+				font-size: 14px;
+				padding: 30px 0 30px 15px;
+			}
+
+			&:first-child > a {
+				border-top: 1px solid @gray-lightgray;
+			}
+
+			&.active > a, 
+			&.active > a:hover, 
+			&.active > a:focus {
+				background: none;
+				border-top: 1px solid transparent;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
+				border-bottom: 1px solid @gray-lightgray;
+			}
+		}
+	}
+	.small-padding {
+		.nav-tabs {
+			> li > {
+
+				a {
+					padding: 20px 0 20px 15px;
+				}
+
+				i {
+					font-size: 24px;
+				}
+			}			
+		}
+	}
+}
+
+@media only screen and (max-width : 767px) {
+.vertical-tab .tab-content {
+	padding: 20px 5px;
+}
+.nav-tabs > li > a {
+	border-radius: 0;
+	border-bottom: none;
+	border-left: 2px solid @gray-lightgray;
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+	border-bottom: none;
+	border-left: 2px solid @gray-lightgray;
+}
+}
+.custom-nav-tabs {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color;
+    border-image: none;
+    border-style: none solid none none;
+    border-width: medium 0px medium medium;
+    margin-right: 53px;
+    > li {
+	    float: none;
+	    margin: 0 0 1px;
+
+	    a {
+		    background: @gray-lighter none repeat scroll 0 0;
+		    border: medium none;
+		    border-radius: 0;
+		    display: block;
+		    font-size: 17px;
+		    font-weight: 700;
+		    line-height: 59px;
+		    margin: 0;
+		    outline: medium none;
+		    padding: 0;
+		    text-align: center;
+		    text-transform: uppercase;
+		}
+	}
+}
+.custom-nav-tabs {
+	> li {
+		
+		&.active > a,
+		&.active > a:hover,
+		&.active > a:focus,
+		> a:hover,
+		> a:focus {
+		    border: medium none;
+		    color: @black;
+		    padding: 0;
+		}
+	}
+}

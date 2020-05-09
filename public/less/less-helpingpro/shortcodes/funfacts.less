@@ -1,0 +1,61 @@
+/*
+ * Shortcode: funfacts.less
+ * -----------------------------------------------
+*/
+.funfact{
+	.transition(all 0.5s ease);
+	&.border {
+	border: 1px solid @gray-lightgray;
+	}
+
+	&.no-border {
+	border: 0;
+	}
+
+	&.border {
+	border: 1px solid @gray-lightgray;
+	}
+
+	i {
+	font-size: 45px;
+	}
+
+	h2 {
+	position: relative;
+		&:after {
+			bottom: 0;
+		}
+	}
+
+	span {
+		color: @gray-lighter;
+		font-size: 18px;
+	}
+}
+
+
+/* funfact style-1*/
+.funfact {
+	&.style-1 {
+		i, .funfact-title {
+			.transition(all 0.5s ease);
+		}
+
+		.funfact-title {
+			color: @black-999;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+	&.style-1 {
+		&:hover {
+			i 	{ 
+				font-size: 40px;
+				opacity: 0.3;
+			}
+			.funfact-title 	{ 
+				color: @black-333;
+			}
+		}		
+	}
+}
