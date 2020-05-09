@@ -24,28 +24,13 @@ export default {
 
 <!-- This should generally be the only global CSS in the app. -->
 <style lang="scss">
-
 @import '~nprogress/nprogress.css';
 @import '@design';
 
 body {
-  background: #efefef;
 }
 
 #nprogress .bar {
   background: $color-link-text;
-}
-.justifyClass{
-  text-align: justify ;
-}
-.backgroundClass{
-  background: url('https://elevateservices.com/wp-content/uploads/AdobeStock_208568531.jpeg');
-
-}
-.leftClass{
-  text-align: left
-}
-.dropdown:hover .dropdown{
-  display: block;
 }
 </style>
