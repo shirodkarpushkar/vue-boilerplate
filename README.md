@@ -60,8 +60,6 @@ yarn
 
 # 4. Start the development server.
 yarn dev
-
-# NOTE: For documentation of the Ticket and its child tasks, please refer docs folder and File titled develop-docs.md
 ```
 
 ### Development
