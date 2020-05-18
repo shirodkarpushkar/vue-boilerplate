@@ -14,7 +14,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
+      <div class="navbar-collapse collapse" id="navbarsExampleDefault" >
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
