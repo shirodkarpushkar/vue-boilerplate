@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+View the demo at  https://shirodkarpushkar.github.io/vue-boilerplate/
+
 Simple Boiler plate for making large vue applications.
 
   - already contains structured files and folder
