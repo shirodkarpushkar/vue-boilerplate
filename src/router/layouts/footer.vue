@@ -5,14 +5,13 @@
 </template>
 
 <script>
-import Layout from '@layouts/main'
 
 export default {
   page: {
     title: 'Footer',
     meta: [{ name: 'description', content: 'Footer' }],
   },
-  components: { Layout },
+  components: {  },
 }
 </script>
 <style scoped>
