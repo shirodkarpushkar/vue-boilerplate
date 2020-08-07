@@ -23,7 +23,7 @@ const router = new VueRouter({
   // This may require some server configuration in production:
   // https://router.vuejs.org/en/essentials/history-mode.html#example-server-configurations
   base: process.env.BASE_URL,
-  mode: 'hash',
+  mode: 'history',
   // Simulate native-like scroll behavior when navigating to a new
   // route and using back/forward buttons.
   scrollBehavior(to, from, savedPosition) {
