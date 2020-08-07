@@ -7,19 +7,11 @@
 import AppEvents from '@/src/event'
 export default {
   data() {
-    return {
-
-    }
+    return {}
   },
-  methods: {
-
-  },
-  created() {
-
-  },
+  created() {},
+  methods: {},
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
