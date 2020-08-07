@@ -5,23 +5,23 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build --modern",
-    "new": "hygen new",
-    "docs": "vuepress dev"
+    "new": "hygen new"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.15",
     "@fortawesome/free-solid-svg-icons": "5.7.2",
     "@fortawesome/vue-fontawesome": "0.1.5",
     "axios": "0.18.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.5.2",
     "command-line-args": "^5.0.2",
     "crypto-js": "^3.1.9-1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "4.17.13",
     "normalize.css": "8.0.1",
     "nprogress": "0.2.0",
+    "popper.js": "^1.16.1",
     "roboto-fontface": "*",
     "v-runtime-template": "^1.6.2",
     "vue": "2.6.7",
@@ -30,8 +30,6 @@
     "vue-lazyload": "^1.3.3",
     "vue-meta": "1.5.8",
     "vue-multiselect": "^2.1.6",
-    "vue-perfect-scrollbar": "^0.1.0",
-    "vue-popperjs": "^2.2.0",
     "vue-router": "3.0.2",
     "vue-toasted": "^1.1.27",
     "vuejs-paginate": "^2.1.0",
@@ -67,8 +65,7 @@
     "stylelint-config-recess-order": "2.0.x",
     "stylelint-config-standard": "18.2.x",
     "stylelint-scss": "3.5.x",
-    "vue-template-compiler": "2.6.7",
-    "vuepress": "0.14.x"
+    "vue-template-compiler": "2.6.7"
   },
   "engines": {
     "node": ">=8.9.0",

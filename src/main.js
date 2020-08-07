@@ -6,7 +6,8 @@ import Vuelidate from 'vuelidate'
 import VueLazyLoad from 'vue-lazyload'
 import Toasted from 'vue-toasted'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-// require styles
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'swiper/dist/css/swiper.css'
 
 Vue.use(VueLazyLoad)

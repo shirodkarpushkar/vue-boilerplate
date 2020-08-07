@@ -14,7 +14,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarsExampleDefault" >
+      <div id="navbarsExampleDefault" class="navbar-collapse collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
@@ -35,9 +35,9 @@
           </li>
           <li class="nav-item dropdown">
             <a
+              id="dropdown01"
               class="nav-link dropdown-toggle"
               href="#"
-              id="dropdown01"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
