@@ -12,12 +12,12 @@ Simple Boiler plate for making large vue applications.
 
 # New Features!
 
-- Added Jost Google font, font-weight: 400
+- Added Jost Google font
 - Provided basic template for starting page
 
 ### Dependencies
 
-The following dependies are used to make life lot simpler for Vue developers.
+The following dependies are used to make life lot simpler for Vue developers all packages are at their latest version.
 
 - axios
 - bootstrap
@@ -36,9 +36,7 @@ The following dependies are used to make life lot simpler for Vue developers.
 - vue-image-lightbox
 - vue-lazyload
 - vue-meta
-- vue-perfect-scrollbar
 - vue-multiselect
-- vue-popperjs
 - vue-router
 - vue-toasted
 - vuejs-paginate
