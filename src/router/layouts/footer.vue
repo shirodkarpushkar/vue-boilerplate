@@ -1,24 +1,6 @@
 <template>
-  <div class="footer">
-    <div class="d-flex justify-content-between">
-      <div>
-        <span>
-          <i class="fa fa-copyright"></i>
-        </span>
-        <span> <i>Afoofa 2020, All rights reserved</i></span>
-      </div>
-      <div class="d-flex">
-        <div class="margin-right-left">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        </div>
-        <div class="margin-right-left">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </div>
-        <div class="margin-right-left">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
+  <div>
+    footer
   </div>
 </template>
 
