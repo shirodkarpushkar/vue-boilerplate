@@ -1,0 +1,4 @@
+language: vue
+rvm:
+ - 2.6.11
+ - vue
