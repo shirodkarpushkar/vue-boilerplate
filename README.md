@@ -1,6 +1,6 @@
 # Boiler Plate for making Vue Applications
 
-[![Actions Status](https://github.com/shirodkarpushkar/vue-boilerplate/workflows/deploy.yml/badge.svg)](https://github.com/shirodkarpushkar/vue-boilerplate/actions)
+[![Actions Status](https://github.com/shirodkarpushkar/vue-boilerplate/workflows/Deploy%20to%20Github%20Pages/badge.svg)](https://github.com/shirodkarpushkar/vue-boilerplate/actions)
 
 View the demo at https://shirodkarpushkar.github.io/vue-boilerplate/
 
