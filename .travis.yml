@@ -1,4 +1,9 @@
-language: vue
-rvm:
- - 2.6.11
- - vue
+language: node_js
+node_js:
+ - 9
+cache:
+  directories:
+  - node_modules
+
+script:
+ - yarn build
