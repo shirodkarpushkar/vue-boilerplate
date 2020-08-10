@@ -1,6 +1,6 @@
 # Boiler Plate for making Vue Applications
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.com/shirodkarpushkar/vue-boilerplate.svg?branch=develop)](https://travis-ci.com/shirodkarpushkar/vue-boilerplate)
 
 View the demo at https://shirodkarpushkar.github.io/vue-boilerplate/
 
