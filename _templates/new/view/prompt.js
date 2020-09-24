@@ -14,5 +14,6 @@ module.exports = [
     type: 'confirm',
     name: 'useStyles',
     message: 'Add <style> block?',
+    initial:'y'
   },
 ]
