@@ -1,6 +1,4 @@
 import axios from 'axios'
-const qs = require('qs')
-var jwt = require('jsonwebtoken')
 
 let serverUrl = process.env.VUE_APP_REDIRECT_OAUTH_URL
 const backendURL = process.env.VUE_APP_BACKEND_SERVER
