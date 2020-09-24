@@ -38,6 +38,7 @@
     "@vue/eslint-config-prettier": "4.0.x",
     "@vue/eslint-config-standard": "4.0.x",
     "babel-core": "7.0.0-bridge.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "cross-env": "5.2.x",
     "eslint-plugin-vue": "5.2.x",
     "http-proxy": "^1.17.0",

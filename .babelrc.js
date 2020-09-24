@@ -1,4 +1,8 @@
 module.exports = {
   presets: ['@vue/app'],
-  // sourceType: 'unambiguous',
+  env: {
+    production: {
+      plugins: ['transform-remove-console'],
+    },
+  },
 }
