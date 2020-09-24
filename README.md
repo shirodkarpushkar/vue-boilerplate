@@ -70,6 +70,10 @@ yarn new view
 ```
 yarn new module
 ```
+- To create a component
+```
+yarn new component
+```
 
 ### Development
 
