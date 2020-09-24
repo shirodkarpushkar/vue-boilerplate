@@ -15,12 +15,11 @@
     "scope": "vue",
     "prefix": "style",
     "body": [
-      "<style lang=\"scss\" module>",
-      "@import '@design';",
+      "<style scoped>",
       "",
       "${0}",
       "</style>"
     ],
-    "description": "<style lang=\"scss\" module>"
+    "description": "<style scoped>"
   }
 }
