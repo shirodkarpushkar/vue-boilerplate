@@ -4,7 +4,6 @@
   </div>
 </template>
 <script>
-import AppEvents from '@/src/event'
 export default {
   data() {
     return {}

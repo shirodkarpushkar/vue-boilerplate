@@ -15,6 +15,8 @@ Simple Boiler plate for making large vue applications.
 - Added Jost Google font
 - Provided basic template for starting page
 - template generator
+- custom vs-code snippet
+- override scss variables in src/design
 
 ### Dependencies
 
@@ -71,6 +73,9 @@ yarn new module
 ```
 yarn new component
 ```
+### Snippets
+
+change snippet as per requirement present in .vscode/_components.code-snippet
 
 ### Development
 

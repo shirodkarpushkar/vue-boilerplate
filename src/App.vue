@@ -4,7 +4,7 @@
     Even when routes use the same component, treat them
     as distinct and create the component again.
     -->
-  
+
     <transition name="fade" mode="out-in">
       <RouterView :key="$route.fullPath" />
     </transition>
@@ -30,10 +30,8 @@ export default {
 <style lang="scss">
 @import '~nprogress/nprogress.css';
 @import '@design';
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-body {
-  font-family: 'Jost', sans-serif;
-}
+@import '@assets/scss/bootstrap.scss';
+
 
 #nprogress .bar {
   background: $color-link-text;
