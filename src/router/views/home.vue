@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import Navbar from '@layouts/Navbar'
-import AppFooter from '@layouts/footer'
 import DescriptionBody from '@components/DescriptionBody.vue'
 export default {
   page: {
@@ -16,8 +14,6 @@ export default {
     meta: [{ name: 'description', content: 'Home' }],
   },
   components: {
-    Navbar,
-    AppFooter,
     DescriptionBody,
   },
   data() {
