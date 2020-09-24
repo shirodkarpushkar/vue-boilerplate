@@ -8,10 +8,9 @@
     "new": "hygen new"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "command-line-args": "^5.0.2",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "lodash": "4.17.19",
     "normalize.css": "8.0.1",
