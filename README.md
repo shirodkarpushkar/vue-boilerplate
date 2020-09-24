@@ -14,8 +14,7 @@ Simple Boiler plate for making large vue applications.
 
 - Added Jost Google font
 - Provided basic template for starting page
-- vue template generator
-- store module template generator
+- template generator
 
 ### Dependencies
 
@@ -24,8 +23,6 @@ The following dependies are used to make life lot simpler for Vue developers all
 - axios
 - bootstrap
 - command-line-args
-- crypto-js
-- font-awesome
 - jquery
 - jsonwebtoken
 - lodash
