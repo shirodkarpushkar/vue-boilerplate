@@ -16,6 +16,7 @@ Simple Boiler plate for making large vue applications.
 - Provided basic template for starting page
 - template generator
 - custom vs-code snippet
+- override scss variables in src/design
 
 ### Dependencies
 
