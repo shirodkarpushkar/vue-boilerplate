@@ -14,6 +14,8 @@ Simple Boiler plate for making large vue applications.
 
 - Added Jost Google font
 - Provided basic template for starting page
+- vue template generator
+- store module template generator
 
 ### Dependencies
 
@@ -57,6 +59,16 @@ yarn
 
 # 4. Start the development server.
 yarn dev
+```
+### Template Generator
+
+- To create a vue template
+```
+yarn new view
+```
+- To create a store module
+```
+yarn new module
 ```
 
 ### Development
