@@ -1,6 +1,4 @@
 import axios from 'axios'
-
-let serverUrl = process.env.VUE_APP_REDIRECT_OAUTH_URL
 const backendURL = process.env.VUE_APP_BACKEND_SERVER
 
 export const state = {
